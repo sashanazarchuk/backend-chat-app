@@ -26,7 +26,7 @@ builder.Services.AddCors(options =>
             .AllowAnyHeader()
             .AllowAnyMethod()
             .AllowCredentials()
-            .SetIsOriginAllowed(_ => true).WithOrigins("http://localhost:4200"); 
+            .WithOrigins("http://localhost:4200", "https://salmon-sand-05cbce20f.6.azurestaticapps.net"); 
     });
 });
 
